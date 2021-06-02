@@ -12,7 +12,7 @@ const auth = require('./middleware/auth')
 
 const port = '8080';
 
-global.ordersStatus = {}; //sorry for that
+global.ordersStatus = {}; //sorry about that
 
 app.use(express.urlencoded({
     extended: true
