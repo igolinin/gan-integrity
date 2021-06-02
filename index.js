@@ -16,10 +16,10 @@ global.ordersStatus = {}; //sorry about that
 
 app.use(express.urlencoded({
     extended: true
-  }));
+}));
 app.use(morgan('dev'));
 app.use(auth);
-app.use('/cities-by-tag', citiesByTag );
+app.use('/cities-by-tag', citiesByTag);
 app.use('/distance', distance);
 app.use('/area', area);
 app.use('/area-result/:resultId', areaResult);

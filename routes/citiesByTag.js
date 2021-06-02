@@ -5,6 +5,6 @@ exports = module.exports = async function citiesByTag(req, res) {
     var cities = addresses.filter(address => {
         return address.tags.includes(tag) && address.isActive;
     })
-    res.json({cities:cities});
+    res.json({ cities: cities });
     res.send().status(200);
 }

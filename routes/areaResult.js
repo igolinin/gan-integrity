@@ -9,7 +9,7 @@ exports = module.exports = async function areaResult(req, res) {
         await fs.remove(`./storage/${resultId}.json`);
         res.json({ cities });
         res.status(200).send();
-    }else{
+    } else {
         res.status(202).send();
     }
 
